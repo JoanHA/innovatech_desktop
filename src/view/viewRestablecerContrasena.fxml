@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="505.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewRestablecerContrasenaController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="281.0" prefWidth="442.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTemporalC" prefHeight="27.0" prefWidth="256.0" text="Código">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtCodigo" onKeyTyped="#eventKey" prefHeight="25.0" prefWidth="260.0" />
+               </children>
+            </HBox>
+            <Label fx:id="lblNuevaC" contentDisplay="CENTER" prefHeight="27.0" prefWidth="263.0" text="Nueva Contraseña">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <PasswordField fx:id="pxtNueva" prefHeight="25.0" prefWidth="260.0" />
+               </children>
+            </HBox>
+            <Label fx:id="lblConfirmarC" contentDisplay="CENTER" prefWidth="260.0" text="Confirmar contraseña">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <PasswordField fx:id="pxtConfirmar" prefHeight="25.0" prefWidth="260.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="93.0" prefWidth="442.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="53.0" prefWidth="428.0" styleClass="titulo" text="Restablecer contraseña">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="442.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="32.0" prefWidth="150.0" styleClass="btnDanger" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#clickGuardar" prefHeight="32.0" prefWidth="150.0" styleClass="btnSuccess" text="Guardar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="9.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

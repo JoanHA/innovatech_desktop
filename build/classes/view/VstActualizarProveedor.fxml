@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrActualizarProveedor">
+   <children>
+      <HBox alignment="CENTER" maxHeight="100.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="700.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="411.0" styleClass="titulo" text="Actualizar proveedor" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="115.0" prefHeight="525.0" prefWidth="695.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="115.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="268.0" prefWidth="340.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="10.0" prefHeight="30.0" prefWidth="130.0" text="Nit:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtNombre" fx:id="txtNit" alignment="BOTTOM_LEFT" layoutX="155.0" layoutY="7.0" onKeyTyped="#txtNitKeyTypedEvent" prefHeight="30.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="10.0" prefHeight="30.0" prefWidth="130.0" text="Nombre Legal:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtPrecio" fx:id="txtNombreLegal" alignment="BOTTOM_LEFT" layoutX="155.0" layoutY="7.0" onKeyTyped="#txtNombreLegalKeyTypedEvent" prefHeight="30.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="10.0" prefHeight="30.0" prefWidth="142.0" text="Nombre Comercial:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtReferencia" fx:id="txtNombreComercial" alignment="BOTTOM_LEFT" layoutX="155.0" layoutY="7.0" onKeyTyped="#txtNombreComercialKeyTypedEvent" prefHeight="30.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="9.0" prefHeight="30.0" prefWidth="130.0" text="Correo:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtCantidad" fx:id="txtCorreo" alignment="BOTTOM_LEFT" layoutX="155.0" layoutY="6.0" onKeyTyped="#txtCorreoKeyTypedEvent" prefHeight="30.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="9.0" prefHeight="30.0" prefWidth="130.0" text="Celular:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtMarca" fx:id="txtCelular" alignment="BOTTOM_LEFT" layoutX="155.0" layoutY="6.0" onKeyTyped="#txtCelularKeyTypedEvent" prefHeight="30.0" prefWidth="185.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="11.0" prefHeight="30.0" prefWidth="130.0" text="Estado:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="cmbEstado" layoutX="155.0" layoutY="7.0" prefHeight="30.0" prefWidth="185.0" styleClass="comboBox" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="796.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Pane prefHeight="40.0" prefWidth="320.0">
+               <children>
+                  <Button fx:id="btnActualizar" layoutX="170.0" mnemonicParsing="false" onAction="#btnActualizarEvent" prefHeight="32.0" prefWidth="150.0" styleClass="btnSuccess" stylesheets="@../style/Style.css" text="Actualizar">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnCancelar" cancelButton="true" mnemonicParsing="false" onAction="#btnCancelarEvent" prefHeight="32.0" prefWidth="150.0" styleClass="btnDanger" stylesheets="@../style/Style.css" text="Cancelar">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

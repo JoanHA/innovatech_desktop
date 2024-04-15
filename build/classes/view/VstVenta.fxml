@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="125.0" maxWidth="1.7976931348623157E308" minHeight="125.0" prefHeight="125.0" prefWidth="420.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrVenta">
+   <children>
+      <Pane maxHeight="125.0" minHeight="125.0" prefHeight="125.0" prefWidth="330.0" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="110.0" prefWidth="110.0" style="-fx-border-color: black;">
+               <children>
+                  <HBox alignment="CENTER" layoutX="1.0" layoutY="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="imgVenta" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Label layoutX="129.0" layoutY="14.0" prefHeight="20.0" prefWidth="90.0" text="Producto:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="50.0" prefHeight="20.0" prefWidth="90.0" text="Referencia:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="86.0" prefHeight="20.0" prefWidth="90.0" text="Cantidad:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProducto" layoutX="219.0" layoutY="14.0" minWidth="90.0" prefHeight="20.0" prefWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblReferencia" layoutX="219.0" layoutY="53.0" minWidth="90.0" prefHeight="20.0" prefWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCantidad" layoutX="219.0" layoutY="86.0" minWidth="90.0" prefHeight="20.0" prefWidth="200.0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</VBox>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="649.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrDetalleVenta">
+   <children>
+      <HBox alignment="CENTER" maxHeight="100.0" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="370.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="330.0" styleClass="titulo" text="Detalles de venta" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="107.0" prefHeight="525.0" prefWidth="695.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="107.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="268.0" prefWidth="420.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="340.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="130.0" text="Usuario:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtNombre" fx:id="txtUsuario" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="130.0" text="Método Pago:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtReferencia" fx:id="txtMetodoPago" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="3.0" prefHeight="30.0" prefWidth="130.0" text="Total:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtCantidad" fx:id="txtTotal" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" layoutY="1.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="130.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane maxHeight="30.0" prefHeight="30.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="130.0" text="Productos:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <ScrollPane fitToWidth="true" minHeight="125.0" prefHeight="125.0" prefWidth="340.0" style="-fx-background-color: white; -fx-border-color: black;" VBox.vgrow="ALWAYS">
+                           <content>
+                              <VBox fx:id="vboxProductos" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="126.0" prefWidth="100.0" style="-fx-background-color: white;" />
+                           </content></ScrollPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" prefHeight="30.0" prefWidth="130.0" text="Estado:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtMarca" fx:id="txtEstado" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" layoutY="-3.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="1.0" prefHeight="30.0" prefWidth="130.0" text="Dirección:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtPrecio" fx:id="txtDireccion" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" layoutY="-2.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="2.0" prefHeight="30.0" prefWidth="130.0" text="Ciudad:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtPrecio" fx:id="txtCiudad" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" layoutY="-2.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label layoutX="1.0" layoutY="4.0" prefHeight="30.0" prefWidth="130.0" text="Fecha de Compra:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField id="txtDescuento" fx:id="txtFecha" alignment="BOTTOM_LEFT" editable="false" layoutX="155.0" prefHeight="30.0" prefWidth="266.0" styleClass="textfield" stylesheets="@../style/Style.css" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="796.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#btnAceptarEvent" prefHeight="40.0" prefWidth="150.0" styleClass="btnDanger" stylesheets="@../style/Style.css" text="Cerrar">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

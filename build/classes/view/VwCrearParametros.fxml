@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="502.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrCrearParametros">
+   <top>
+      <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="489.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="354.0" styleClass="titulo" text="Crear parametro">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="209.0" prefWidth="517.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="98.0" prefWidth="491.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="30.0">
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="150.0" text="Tipo de parametro">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="cbxTipoParametro" onAction="#clickCbxTipoParametro" prefWidth="200.0" promptText="--Seleccionar--" styleClass="comboBox" />
+                           </children>
+                        </VBox>
+                        <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                           <children>
+                              <Label prefWidth="150.0" text="Parametro">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="txtParametro" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hboxPertenece" alignment="CENTER" prefHeight="47.0" prefWidth="412.0" spacing="22.0">
+                     <VBox.margin>
+                        <Insets top="-14.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox fx:id="vboxEstado" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="210.0">
+                           <children>
+                              <Label prefWidth="150.0" text="Estado">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="-48.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="cbxEstado" prefWidth="200.0" promptText="--Seleccionar--" styleClass="comboBox" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxForeign" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="210.0">
+                           <children>
+                              <Label prefWidth="150.0" text="Pertenece a:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="-48.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <ComboBox fx:id="cbxForeign" onAction="#clickCbxForeign" prefWidth="200.0" promptText="--Seleccionar--" styleClass="comboBox" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="491.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="32.0" prefWidth="150.0" styleClass="btnDanger" text="Salir">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#clickAgregar" prefHeight="32.0" prefWidth="150.0" styleClass="btnSuccess" text="Agregar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="556.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrVerProducto">
+   <center>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity">
+         <children>
+            <HBox alignment="CENTER" maxHeight="70.0" prefHeight="50.0" prefWidth="570.0" style="-fx-background-color: white;">
+               <children>
+                  <Label text="Buscar: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField id="txtBusqueda" fx:id="txtBuscar" alignment="CENTER" onKeyReleased="#eventKey" prefHeight="23.0" prefWidth="175.0" promptText="Nombre del producto" />
+               </children>
+            </HBox>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="356.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <TableView fx:id="tblProductos" focusTraversable="false" prefHeight="336.0" prefWidth="560.0" stylesheets="@../style/Style.css" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="colId" maxWidth="2500.0" prefWidth="75.0" styleClass="tableCol" text="#" />
+                            <TableColumn fx:id="colNombre" prefWidth="75.0" styleClass="tableCol" text="Nombre" />
+                              <TableColumn fx:id="colPrecio" prefWidth="75.0" styleClass="tableCol" text="Precio" />
+                              <TableColumn fx:id="colReferencia" prefWidth="75.0" styleClass="tableCol" text="Referencia" />
+                              <TableColumn fx:id="colStock" prefWidth="75.0" styleClass="tableCol" text="Stock" />
+                              <TableColumn fx:id="colMarca" prefWidth="75.0" styleClass="tableCol" text="Marca" />
+                              <TableColumn fx:id="colCategoria" prefWidth="75.0" styleClass="tableCol" text="Categoria" />
+                              <TableColumn fx:id="colIva" prefWidth="75.0" styleClass="tableCol" text="IVA" />
+                              <TableColumn fx:id="colDescuento" prefWidth="75.0" styleClass="tableCol" text="Descuento" />
+                              <TableColumn fx:id="colEstado" prefWidth="75.0" styleClass="tableCol" text="Estado" />
+                              <TableColumn fx:id="colRegistro" prefWidth="75.0" styleClass="tableCol" text="Registro" />
+                              <TableColumn fx:id="colOpciones" maxWidth="7500.0" prefWidth="75.0" styleClass="tableCol" text="Opciones" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <styleClass>
+                              <String fx:value="scroll-bar" />
+                              <String fx:value="table-view" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="1.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="1.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" fillHeight="false" prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnNuevoProducto" alignment="CENTER" contentDisplay="CENTER" maxWidth="150.0" mnemonicParsing="false" onAction="#btnNuevoProductoEVent" prefHeight="32.0" prefWidth="150.0" styleClass="btnPrimary" stylesheets="@../style/Style.css" text="Nuevo" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" maxHeight="100.0" maxWidth="1.7976931348623157E308" prefHeight="83.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="339.0" styleClass="titulo" text="Productos" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

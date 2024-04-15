@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="563.0" prefWidth="659.0" style="-fx-background-color: white;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrAyuda">
+   <top>
+      <HBox alignment="CENTER" maxHeight="100.0" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="600.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="498.0" styleClass="titulo" text="¿Como podemos ayudarte?" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" top="37.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane focusTraversable="false" stylesheets="@../style/Style.css" BorderPane.alignment="CENTER">
+         <content>
+            <VBox fx:id="vboxPadre" maxWidth="1.7976931348623157E308" spacing="6.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="clickRecuperarContrasena" accessibleRole="BUTTON" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Recuperar contraseña.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickEditarDatos" accessibleRole="BUTTON" text="Editar datos de administrador.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickCrearProducto" accessibleRole="BUTTON" text="Crear un producto.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickActualizarProducto" accessibleRole="BUTTON" text="Actualizar productos.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickDeshabilitarProducto" accessibleRole="BUTTON" text="Ver ventas.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickInformes" accessibleRole="BUTTON" text="Crear informe.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickReenviarInformes" accessibleRole="BUTTON" text="Reenviar informe.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickPQRS" accessibleRole="BUTTON" text="Ver y responder PQRS.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickProveedor" accessibleRole="BUTTON" text="Crear y actualizar proveedores.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickEnviarPedido" accessibleRole="BUTTON" text="Enviar pedido.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickConfirmarPedido" accessibleRole="BUTTON" text="Confirmar pedido.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickCarrusels" accessibleRole="BUTTON" text="Gestionar el carrusel.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickPuntosFisicos" accessibleRole="BUTTON" text="Gestión de puntos físicos.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="clickParametros" accessibleRole="BUTTON" text="Gestión de parámetros.">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </content>
+         <BorderPane.margin>
+            <Insets top="25.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>

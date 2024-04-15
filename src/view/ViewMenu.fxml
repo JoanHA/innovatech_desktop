@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneparent" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="652.0" prefWidth="1338.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2px 2px 2px 2px;" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMenu">
+   <children>
+      <BorderPane fx:id="brdmostrar" layoutX="1.0" layoutY="1.0" prefHeight="654.0" prefWidth="1338.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-1.0">
+         <left>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="650.0" prefWidth="207.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vboxPadre" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="653.0" prefWidth="195.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="177.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.jpeg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets right="8.0" top="-9.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="150.0" spacing="5.0">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button fx:id="btnPerfil" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#clickPerfil" style="-fx-background-color: transparent;" text="Button">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/usuario.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btncerrar" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#cerrarSession" style="-fx-background-color: transparent;" text="Button">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0">
+                                       <image>
+                                          <Image url="@../images/cerrar.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="ayuda" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#clickAyuda" style="-fx-background-color: transparent;" text="Button">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0">
+                                       <image>
+                                          <Image url="@../images/ayuda.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btninicio" alignment="CENTER" contentDisplay="TEXT_ONLY" focusTraversable="false" mnemonicParsing="false" onMouseClicked="#abririnicio" prefHeight="61.0" prefWidth="145.0" styleClass="menu" text="Inicio">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnproductos" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" prefHeight="61.0" prefWidth="145.0" styleClass="menu" text="Productos">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btninfo" alignment="CENTER" contentDisplay="TEXT_ONLY" focusTraversable="false" mnemonicParsing="false" prefHeight="61.0" prefWidth="166.0" styleClass="menu" text="Información">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnpqrs" alignment="CENTER" contentDisplay="TEXT_ONLY" focusTraversable="false" mnemonicParsing="false" prefHeight="61.0" prefWidth="145.0" styleClass="menu" text="PQRS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnProvee" alignment="CENTER" contentDisplay="TEXT_ONLY" focusTraversable="false" mnemonicParsing="false" prefHeight="61.0" prefWidth="165.0" styleClass="menu" text="Proveedores">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnMas" alignment="CENTER" contentDisplay="TEXT_ONLY" focusTraversable="false" mnemonicParsing="false" prefHeight="61.0" prefWidth="145.0" styleClass="menu" text="Mas...">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+               </content>
+               
+            </ScrollPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

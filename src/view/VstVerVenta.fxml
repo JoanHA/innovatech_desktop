@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CtrVerVenta">
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="600.0" style="-fx-background-color: white;" styleClass="background-white">
+         <children>
+            <HBox alignment="CENTER" maxHeight="100.0" maxWidth="1.7976931348623157E308" prefHeight="69.0" prefWidth="600.0" styleClass="background-white" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Label id="lblTitulo" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="328.0" styleClass="titulo" text="Gestión de ventas" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+                     <HBox.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="15.0" layoutY="84.0" maxHeight="70.0" prefHeight="51.0" prefWidth="570.0" styleClass="background-white" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <Label text="Buscar: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField id="txtBusqueda" fx:id="txtBuscar" alignment="CENTER" onKeyReleased="#eventKey" prefHeight="25.0" prefWidth="226.0" promptText="No. identificación o fecha de compra" />
+               </children>
+            </HBox>
+            <VBox layoutX="15.0" layoutY="139.0" prefHeight="416.0" prefWidth="570.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="139.0">
+               <children>
+                  <VBox VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <TableView fx:id="tblVentas" focusTraversable="false" prefHeight="200.0" prefWidth="200.0" styleClass="scroll-bar" stylesheets="@../style/Style.css" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="colId" maxWidth="2500.0" prefWidth="75.0" styleClass="tableCol" text="#" />
+                              <TableColumn fx:id="colUsuario" prefWidth="75.0" styleClass="tableCol" text="No. identificación" />
+                              <TableColumn fx:id="colTotal" prefWidth="75.0" styleClass="tableCol" text="Total" />
+                              <TableColumn fx:id="colFormaEnvio" prefWidth="75.0" styleClass="tableCol" text="Envío" />
+                              <TableColumn fx:id="colEstado" prefWidth="75.0" styleClass="tableCol" text="Estado" />
+                              <TableColumn fx:id="colRegistro" prefWidth="75.0" styleClass="tableCol" text="Fecha de compra" />
+                              <TableColumn fx:id="colOpciones" maxWidth="7500.0" prefWidth="75.0" styleClass="tableCol" text="Opciones" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,241 @@
+.menu:hover{
+    -fx-background-color :  red;
+    -fx-text-fill: white;
+    -fx-background-radius:  20px;
+
+}
+.titulo{
+    -fx-border-color: #E51D1F;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.btnSuccess:hover{
+    -fx-background-color: #157347;
+}
+.btnSuccess:pressed{
+    -fx-border-color: #9DCCB6;
+}
+.btnSuccess{
+    -fx-text-fill: white;
+    -fx-background-color: #198754;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.btnDanger:hover{
+    -fx-background-color: #BB2D3B;
+}
+
+.btnDanger:pressed{
+    -fx-border-color: #F0A9B0;
+}
+.btnDanger{
+    -fx-text-fill: white;
+    -fx-background-color: #DC3545;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.btnPrimary:hover{
+    -fx-background-color: #0B5ED7;
+}
+
+.btnPrimary:pressed{
+    -fx-border-color: #98C1FE;
+}
+.btnPrimary{
+    -fx-text-fill: white;
+    -fx-background-color: #0D6EFD;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.btnSecondary:hover{
+    -fx-background-color: #5C636A;
+}
+
+.btnSecondary:pressed{
+    -fx-border-color: #C0C4C8;
+}
+.btnSecondary{
+    -fx-text-fill: white;
+    -fx-background-color: #6C757D;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.btnWarning:hover{
+    -fx-background-color: #FFC107;
+}
+
+.btnWarning:pressed{
+    -fx-border-color: #ECD182;
+}
+.btnWarning{
+    -fx-text-fill: white;
+    -fx-background-color: #FFCA2C;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.tableCol .label{
+    -fx-text-fill: white;
+    -fx-background-color: #E51D1F;
+    -fx-border-width: 0 0 0 0;
+}
+.tableCol{
+    -fx-background-color: white;
+    -fx-border-width: 0 0 0 0;
+    -fx-alignment: CENTER;
+    -fx-border-color: #D5DBDB;
+    -fx-pref-height: 40;
+}
+
+.column-header-background .nested-column-header .column-header{
+    -fx-background-color:  #E51D1F;
+}
+.table-view{
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+.scroll-bar .thumb{
+    -fx-background-color: #E51D1F;
+    -fx-border-width: 50;
+}
+.scroll-bar .track{
+    -fx-background-color: white;
+}
+.scroll-bar{
+    -fx-pref-width: 15;
+}
+.comboBox{
+    -fx-background-color: white;
+    -fx-border-width: 0 2 2 2;
+    -fx-alignment: CENTER;
+    -fx-border-radius: 2;
+    -fx-border-color: #D5DBDB;
+}
+.btnLink{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+.btnLink:hover{
+    -fx-font-style: Italic;
+}
+.btnLink:pressed{
+    -fx-font-weight: bold;
+    -fx-text-fill: #82CBF7;
+    -fx-font-size: 14;
+}
+.btnSubBoton{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+    -fx-pref-width: 130px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 20px;
+}
+.btnSubBoton:hover{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-pref-width: 130px;
+    -fx-pref-height:  50px;
+    -fx-background-radius:  20px;
+}
+.btnEditar{
+    -fx-text-fill: white;
+    -fx-background-color: #FFCA2C;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 140px; 
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    
+}
+.btnEliminar{
+   -fx-text-fill: white;
+    -fx-background-color: #DC3545;
+    -fx-background-radius: 4;
+    -fx-alignment: CENTER;
+    -fx-border-width: 3;
+    -fx-border-radius: 4;
+    -fx-pref-height: 30px;
+    -fx-pref-width: 148px; 
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    
+}
+.btnEditar:hover{
+    -fx-background-color: #FFC107;
+}
+.btnEditar:pressed{
+    -fx-border-color: #ECD182;
+}
+.btnEliminar:hover{
+    -fx-background-color: #BB2D3B;
+}
+.btnEliminar:pressed{
+    -fx-border-color: #F0A9B0;
+}
+
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-padding: 0;
+}
+
+.text-field:focused {
+    -fx-border-color: #E51D1F;
+    -fx-border-width: 0px 0px 2px 0px;
+}
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-padding: 0;
+}
+
+.text-area:focused {
+    -fx-border-color: #E51D1F;
+}
+
+.root{
+    -fx-background-color: white;
+}
+
+.scroll-pane .viewport{
+    -fx-background-color: white;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-focus-traversable: false;
+}
+.scroll-pane{
+    -fx-background-color: white;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-focus-traversable: false;
+}
